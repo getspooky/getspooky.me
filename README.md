@@ -1,16 +1,6 @@
-![tailwind-nextjs-banner](/public/static/images/twitter-card.png)
+# [getspooky.com]()
 
-# Tailwind Nextjs Starter Blog
-
-[![GitHub Repo stars](https://img.shields.io/github/stars/timlrx/tailwind-nextjs-starter-blog?style=social)](https://GitHub.com/timlrx/tailwind-nextjs-starter-blog/stargazers/)
-[![GitHub forks](https://img.shields.io/github/forks/timlrx/tailwind-nextjs-starter-blog?style=social)](https://GitHub.com/timlrx/tailwind-nextjs-starter-blog/network/)
-[![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Ftimlrxx)](https://twitter.com/timlrxx)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/timlrx/tailwind-nextjs-starter-blog)
-
-This is a [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/) blogging starter template. Comes out of the box configured with the latest technologies to make technical writing a breeze. Easily configurable and customizable. Perfect as a replacement to existing Jekyll and Hugo individual blogs.
-
-Check out the documentation below to get started. Facing issues? Checkout of the [FAQ page](https://github.com/timlrx/tailwind-nextjs-starter-blog/wiki) and do a search on past issues. Feel free to open a new issue if none has been posted previously.
+My personal blog. Forked from [tailwind-nextjs-starter-blog](https://github.com/timlrx/tailwind-nextjs-starter-blog).
 
 ## Examples
 
@@ -18,14 +8,6 @@ Check out the documentation below to get started. Facing issues? Checkout of the
 - [My personal blog](https://www.timlrx.com) - modified to auto-generate blog posts with dates
 
 Using the template? Happy to accept any PR with modifications made e.g. sub-paths, localization or multiple authors
-
-## Motivation
-
-I wanted to port my existing blog to Nextjs and Tailwind CSS but there was no easy out of the box template to use so I decided to create one.
-
-It is inspired by [Lee Robinson's blog](https://github.com/leerob/leerob.io), but focuses only on static site generation. Design is adapted from [Tailwindlabs blog](https://github.com/tailwindlabs/blog.tailwindcss.com).
-
-I wanted it to be nearly as feature-rich as popular blogging templates like [beautiful-jekyll](https://github.com/daattali/beautiful-jekyll) and [Hugo Academic](https://github.com/wowchemy/wowchemy-hugo-modules) but with the best of React's ecosystem and current web development's best practices.
 
 ## Features
 
@@ -105,48 +87,6 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 `layouts` - main templates used in pages.
 
 `pages` - pages to route to. Read the [Next.js documentation](https://nextjs.org/docs) for more information
-
-## Post
-
-### Frontmatter
-
-Frontmatter follows [Hugo's standards](https://gohugo.io/content-management/front-matter/).
-
-Currently 7 fields are supported.
-
-```
-title (required)
-date (required)
-tags (required, can be empty array)
-lastmod (optional)
-draft (optional)
-summary (optional)
-images (optional, if none provided defaults to socialBanner in siteMetadata config)
-authors (optional list which should correspond to the file names in `data/authors`. Uses `default` if none is specified)
-layout (optional list which should correspond to the file names in `data/layouts`)
-```
-
-Here's an example of a post's frontmatter:
-
-```
----
-title: 'Introducing Tailwind Nexjs Starter Blog'
-date: '2021-01-12'
-lastmod: '2021-01-18'
-tags: ['next-js', 'tailwind', 'guide']
-draft: false
-summary: 'Looking for a performant, out of the box template, with all the best in web technology to support your blogging needs? Checkout the Tailwind Nextjs Starter Blog template.'
-images: ['/static/images/canada/mountains.jpg', '/static/images/canada/toronto.jpg']
-authors: ['default', 'sparrowhawk']
-layout: PostLayout
----
-```
-
-### Compose
-
-Run `node ./scripts/compose.js` to bootstrap a new post.
-
-Follow the interactive prompt to generate a post with pre-filled front matter.
 
 ## Deploy
 
