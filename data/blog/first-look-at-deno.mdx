@@ -1,0 +1,103 @@
+---
+title: 'First look at Deno'
+date: '2021-07-25'
+tags: ['deno', 'typescript', 'javascript', 'rust']
+draft: false
+summary: 'An overview of Deno - A runtime for JavaScript and TypeScript that is based on the V8 JavaScript engine and the Rust programming language'
+layout: PostSimple
+---
+
+## Overview
+
+Deno is a secure TypeScript runtime built on V8, the Google runtime engine for JavaScript. It was created by Ryan Dahl, Original creator of Node.js, and is focused on productivity.
+
+It was announced by Dahl in 2018 during his talk [10 Things I Regret About Node.js](https://www.youtube.com/watch?v=M3BM9TB-8yA). Dahl admitted at the 2018 JSConf EU that there are a few things he should have thought about more — security, modules, and dependencies, to name a few.
+
+Deno was initially written in [Go](https://golang.org/) and used [Protocol Buffers](https://developers.google.com/protocol-buffers) for serialization between privileged (Go, with system call access) and unprivileged (V8) sides.However, Go was soon replaced with [Rust](https://www.rust-lang.org) due to concerns of double runtime and garbage collection pressure.
+
+A standard library, modeled after Go's standard library, was created in November 2018 to provide extensive tools and utilities, partially solving Node.js' dependency tree explosion problem.
+
+> The official Deno 1.0 was released on May 13, 2020.
+
+On March 29, 2021, the Deno company was announced, with backing in millions of dollars from [Shasta Ventures](https://shastaventures.com/), [Mozilla Corporation](https://www.mozilla.org/en-US/) and a few others. It was established to further the development of Deno and provide a commercial offering to users.
+
+## Why Deno is created ?
+
+JavaScript has changed a bit since 2009. Development, performance, and features have changed drastically in this amount of time, and Node.js has done it's best to keep up. Perhaps starting over fresh is a better approach.
+
+According to Dahl, here are some design issues he's found with Node.js.
+
+- The module system and its distribution
+- Legacy APIs that must be supported
+- Security issues
+
+Deno aims to address all of these.
+
+## Features
+
+Let’s take a closer look at some of the main features that make Deno a compelling alternative to Node.
+
+#### Security
+
+Deno is secure by default, and it was created like that by design. It ultimately leverages the V8 sandbox and provides a strict permission model that enables developers to finely control what the code has access to.
+
+To grant the program access, you can use special flags when running the program.
+
+Let’s take a look at how the permission system works.
+
+```ts
+const json = fetch('https://api.github.com/users/denoland')
+
+json
+  .then((response) => {
+    return response.json()
+  })
+  .then((jsonData) => {
+    console.log(jsonData)
+  })
+```
+
+In order to grant permission to listen to the network you use flags `--allow-net`
+
+```sh
+deno run --allow-net fetch.ts
+```
+
+If we choose the deny option, the PermissionDenied error will be thrown, and the process will be terminated since we don’t have any error-handling logic.
+
+```sh
+deno run fetch.ts
+```
+
+```sh
+error: Uncaught (in promise) PermissionDenied: Requires net access to "api.github.com", run again with the --allow-net flag
+const json = fetch("https://api.github.com/users/denoland");
+```
+
+Learn more about permission [here](https://deno.land/manual/getting_started/permissions).
+
+> Deno module has no file, network, or environment access for example, unless you specifically enable it.
+
+#### Deno modules
+
+Deno, just like browsers, loads modules by URLs, the Node Package Manager is very complex, it takes into consideration edge cases such as importing folders, searching for dependencies, searching for index.js, third-party packages, and reading the package.json file.
+
+By importing code via URL, we make it possible for package creators to host their code wherever they see fit - no `package.json`, no `node_modules`. In addition having a centralized package manager like `npm` is not very webby, to use Dahl's words. The fact that millions of applications depend on a single registry to survive is a liability.
+
+```ts
+import { getCookies } from 'https://deno.land/std@0.103.0/http/cookie.ts'
+```
+
+When we start the application for the first time, Deno downloads all the imported modules and caches them. Once they are cached, Deno will not download them again until we specifically ask for it with the `--reload` flag.
+
+#### Browser Compatibility
+
+Deno's API is built to follow the browser's API, This means that developers can easily go between the two. It's also a big gesture to align with the Web Standards. Rather than invent something different.
+
+For example : `fetch`, `workers` , `crypto` , `websocket` and more.
+
+## Will Deno replace Node ?
+
+I don’t think that Node is going anywhere anytime soon. Node js has a solid and tremendous ecosystem of developers. Then again, Deno is in its incipient stage and will set aside an effort to make up for the lost time.
+
+So, what do you think?

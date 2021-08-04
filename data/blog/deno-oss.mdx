@@ -1,0 +1,45 @@
+---
+title: 'How to contribute to Deno std'
+date: '2021-08-02'
+tags: ['deno', 'guide', 'open source', 'github']
+draft: false
+summary: 'Hopefully this guide makes the process for contributing clear and answers some questions that you may have'
+layout: PostSimple
+---
+
+## Overview
+
+Before reading this document, please check out the official [CONTRIBUTING.md](https://deno.land/manual@v1.12.2/contributing) by Deno team. This document aims to be a complement to the above guidelines and if you are new to **Deno** make sure to read [First look at Deno](/blog/first-look-at-deno).
+
+Deno std (Standard library) a set of standard modules (`http`, `fmt`, `fs` ...) that are audited by the core team and are guaranteed to work with Deno. Std is written entirely in [Typescript](https://www.typescriptlang.org/) so it's necessary to have some basic knowledge of `Typescript` or `JavaScript`.
+
+## Code of Conduct
+
+The Contributor Covenant has been adopted by Deno as its [Code of Conduct](https://github.com/denoland/deno/blob/main/CODE_OF_CONDUCT.md). Please read the entire paragraph to understand what activities will be permitted and which will not.
+
+## Open Development
+
+All Deno development takes place on [GitHub](https://github.com/). Pull requests are sent by both core team members and external contributors, and they all go through the same review procedure.
+
+## Bugs
+
+Deno uses [GitHub Issues](https://github.com/denoland/deno_std/issues) for public bugs. They keep a close eye on this and try to make it clear when we have an internal fix in progress. Before filing a new task, try to make sure your problem doesn’t already exist.
+
+## Got a Question or Problem?
+
+**Do not open issues for general support questions**. You've got much better chances of getting your question answered on [Stack Overflow](https://stackoverflow.com/) where the questions should be tagged with tag [deno](https://stackoverflow.com/questions/tagged/deno).
+
+Stack Overflow is a much better place to ask questions since:
+
+- Questions and answers stay available for public viewing so your question / answer might help someone else
+- Stack Overflow's voting system assures that the best answers are prominently visible.
+
+If you would like to chat about the question in real-time, you can reach out via deno [discord channel](https://discord.com/invite/deno).
+
+## Your First Pull Request
+
+Before **submitting a pull request**, please make sure the following is done:
+
+- Search [GitHub]() for an open or closed PR that relates to your submission. You don't want to duplicate effort.
+
+add_header Content-Security-Policy "default-src 'self' https://_.ondertekenen.test.cleverbase.com https://ondertekenen.test.cleverbase.com; worker-src 'self' blob: https://www.ondertekenen.test.cleverbase.com; media-src 'self' https: blob:; child-src blob:; base-uri 'self'; block-all-mixed-content; connect-src 'self' https://ondertekenen.test.cleverbase.com/api https://ci.ondertekenen.test.cleverbase.com/api; frame-ancestors 'none'; frame-src 'none'; img-src 'self' data:; font-src 'self' data: fonts.gstatic.com; manifest-src 'self'; script-src 'self' https://_.ondertekenen.test.cleverbase.com https://ondertekenen.test.cleverbase.com 'unsafe-eval' https: blob: 'sha256-XnlW+Q/qUqXzkCVA89lMseC2VidZkiTrsE6/I9d34x0=' ; style-src 'self' https://\*.ondertekenen.test.cleverbase.com https://ondertekenen.test.cleverbase.com https://fonts.googleapis.com 'unsafe-inline'; object-src 'none';" always;

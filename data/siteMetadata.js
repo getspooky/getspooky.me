@@ -1,20 +1,21 @@
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
+  title: 'Personal blog by A.Idrissi',
+  author: 'Yasser A.Idrissi',
+  headerTitle: 'Yasser A.Idrissi',
+  description: 'If you have knowledge, let others light their candles in it.',
   language: 'en-us',
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
-  siteLogo: '/static/images/logo.png',
+  siteLogo: '/static/images/logo.jpeg',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  email: 'getspookydev@gmail.com',
+  github: 'https://github.com/getspooky',
+  twitter: 'https://twitter.com/Yasser_Ameur_el',
+  facebook: '',
+  youtube: '',
+  instagram: 'https://www.instagram.com/ameuryasser/',
+  linkedin: 'https://www.linkedin.com/in/yasser-ameur-el-idrissi-747280191/',
   locale: 'en-US',
   comment: {
     // Select a provider and use the environment variables associated to it
@@ -33,9 +34,9 @@ const siteMetadata = {
       metadata: '0',
       // theme example: light, dark, dark_dimmed, dark_high_contrast
       // transparent_dark, preferred_color_scheme, custom
-      theme: 'light',
+      theme: 'dark_high_contrast',
       // theme when dark mode
-      darkTheme: 'transparent_dark',
+      darkTheme: 'light',
       // If the theme option above is set to 'custom`
       // please provide a link below to your custom theme css file.
       // example: https://giscus.app/themes/custom_example.css

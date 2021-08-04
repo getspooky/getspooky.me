@@ -1,16 +1,20 @@
 ---
-name: Tails Azimuth
-avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
-company: Stanford University
-email: address@yoursite.com
-twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
-github: https://github.com
+name: Yasser A.Idrissi
+avatar: /static/images/avatar.jpeg
+occupation: Software Engineer
+company: Taillis Labs
+email: getspookydev@gmail.com
+twitter: https://twitter.com/Yasser_Ameur_el
+linkedin: https://www.linkedin.com/in/yasser-ameur-el-idrissi-747280191/
+github: https://github.com/getspooky
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+### <samp>Hey, there! 👋 </samp>
 
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
+<samp>I'm a Software Engineer from Morocco 🇲🇦 highly motivated, dynamic, persevering, rigorous. I was born in 1999 (you can do the math). I'm passionate about Web Development, blockchain and open source. I have been contributing to many OSS projects, My
+contributions include adding new features, fixing bugs and reviewing other people’s pull
+requests and issues .🤗 I’m looking forward to collaborate on any Open Source project which I consider interesting and useful. I'm also a `Speciality Tea drinking geek` 🍵.</samp>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+> The power of Open Source is the power of the people. The people rule.
+>
+> -- <cite>Philippe Kahn</cite>
