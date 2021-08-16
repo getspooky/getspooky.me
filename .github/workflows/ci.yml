@@ -26,6 +26,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - name: build app
+      - name: install pkg & build app
         run: |
+          npm install
           npm run build
