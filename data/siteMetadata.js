@@ -4,7 +4,7 @@ const siteMetadata = {
   headerTitle: 'Yasser A.Idrissi',
   description: 'If you have knowledge, let others light their candles in it.',
   language: 'en-us',
-  siteUrl: 'https://getspooky-co.vercel.app/',
+  siteUrl: 'https://getspooky-co.vercel.app',
   siteRepo: 'https://github.com/getspooky/getspooky.me',
   siteLogo: '/static/images/logo.jpeg',
   image: '/static/images/avatar.png',
