@@ -1,0 +1,74 @@
+---
+title: "LET'S LEARN RUST TOGETHER - DAY 1 INTRODUCTION"
+date: '2021-08-24'
+tags: ['rust', 'bootcamp', '30-days-of-rust']
+draft: false
+summary: 'You want to learn a new programming language? You aren’t sure about what language to choose? Have you heard about Rust? Well, let’s learn Rust in 30 days!'
+layout: PostSimple
+---
+
+## Overview
+
+You want to learn a new programming language? You aren’t sure about what language to choose? Have you heard about Rust? Well, let’s learn Rust in 30 days. From its official page, Rust is “A language empowering everyone to build reliable and efficient software”.
+
+Rust is a popular language these days. Rust has been Stack Overflow's most loved language for four years in a row, indicating that many of those who have had the opportunity to use Rust have fallen in love with it. However, the roughly 97% of survey respondents who haven't used Rust may wonder.
+
+## Motivation
+
+Rust was designed with **the goal of providing high performance comparable to C and C++ while focusing on code safety**, which is the Achilles heel of the other two languages. It has worked so successfully that well-known software heavyweights such as [Firefox](https://www.mozilla.org/fr/firefox/windows), [Dropbox](https://www.dropbox.com), and [Cloudflare](https://www.cloudflare.com) now utilize the Rust programming language.
+
+## Benefits
+
+Rust comes with three main benefits:
+
+- Better memory safety due to the compiler
+- Easier concurrency due to the data ownership model that prevents data races
+- Zero-cost abstractions
+
+## Is Rust object-oriented?
+
+> Object-oriented programming (OOP) is a way of modeling programs. Objects came from Simula in the 1960s. Those objects influenced Alan Kay’s programming architecture in which objects pass messages to each other. He coined the term object-oriented programming in 1967 to describe this architecture. Many competing definitions describe what OOP is; some definitions would classify Rust as object oriented, but other definitions would not. In this chapter, we’ll explore certain characteristics that are commonly considered object oriented and how those characteristics translate to idiomatic Rust. We’ll then show you how to implement an object-oriented design pattern in Rust and discuss the trade-offs of doing so versus implementing a solution using some of Rust’s strengths instead.
+>
+> -- <cite>https://doc.rust-lang.org/</cite>
+
+## Installation
+
+There are many ways to install Rust on your system. For the moment the official way to install Rust is using Rustup.
+
+If you’re using Linux or macOS, open a terminal and enter the following command:
+
+```sh
+$ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+```
+
+The command downloads a script and starts the installation of the rustup tool, which installs the latest stable version of Rust. On Windows, go to https://www.rust-lang.org/tools/install and follow the instructions for installing Rust.
+
+## Updating && Uninstalling
+
+Updating to the latest version is so easly, so you can do it by running the following script
+
+```sh
+rustup update
+```
+
+To uninstall Rust, run the following script
+
+```
+rustup self uninstall
+```
+
+## Hello World
+
+```rust
+fn main() {
+    println!("Hello, world!");
+}
+```
+
+#### Description
+
+- `fn` : Means function.
+- `main` : The beginnning of every RUST program.
+- `println` : Prints text to the console and its `!` indicate that it's a `macro` instead of a function.
+
+(ﾉ ◕ ヮ ◕)ﾉ Have fun!
