@@ -2,7 +2,7 @@
 name: Yasser A.Idrissi
 avatar: /static/images/avatar.jpeg
 occupation: Software Engineer
-company: Taillis Labs
+company: oncyber.io
 email: getspookydev@gmail.com
 twitter: https://twitter.com/Yasser_Ameur_el
 linkedin: https://www.linkedin.com/in/yasser-ameur-el-idrissi-747280191/
